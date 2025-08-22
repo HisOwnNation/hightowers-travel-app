@@ -271,6 +271,17 @@ header::before {
   .hero-content h1 {
     font-size: 3rem;
     line-height: 3.5rem;
+    text-align: center;
+  }
+
+  .hero-content p {
+    text-align: center;
+  }
+
+  .hero-btn {
+    align-items: center;
+    justify-content: center;
+    display: flex;
   }
 }
 
