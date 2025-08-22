@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HighTowers | Travel & Tours Website</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body style="height: 100%">
+    <nav>
+      <div class="container">
+        <div class="logo-area">
+          <a href="#" class="logo">HighTowers</a>
+        </div>
+
+        <div class="menu-lists">
+          <ul class="lists">
+            <li><a>HOME</a></li>
+            <li><a>ABOUT</a></li>
+            <li><a>TOUR</a></li>
+            <li><a>PACKAGE</a></li>
+            <li><a>CONTACT</a></li>
+            <li><a>BOOK TRIP</a></li>
+          </ul>
+        </div>
+
+        <div class="book-btn">
+          <button class="btn" id="btn">BOOK TRIP</button>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <header id="hero-section">
+      <div class="hero-container">
+        <div class="hero-content fade-in">
+          <p class="fade-in">
+          ELEVATE YOUR TRAVEL JOURNEY
+          </p>
+          <h1 class="fade-in">
+            Experience The Magic Of <span class="span-1">Flight</span
+            ><span class="span-2">!</span>
+          </h1>
+
+          <div class="hero-btn fade-in">
+            <button class="hero-btn-a">Book A Trip Now</button>
+            <a href="#" class="play-btn">
+              <span>
+                <i class="fa-solid fa-play"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div
+          class="hero-image fade-in fade-left">
+          <img src="./assets/header.png" alt="header" />
+        </div>
+      </div>
+    </header>
+
+    <section class="destination-section">
+      <h2 class="dest">Popular Destination</h2>
+
+      <p class="description">
+        Discover the Most Loved Destinations Around the Globe
+      </p>
+
+      <div class="destination-grid">
+        <div class="dest-a fade-in">
+          <img
+            class="dest-img"
+            src="./assets/destination-1.jpg"
+            alt="destination-1"
+          />
+          <div class="card-details">
+            <div>
+              <h4>Tradition and Futurism</h4>
+              <p>New York City, USA</p>
+            </div>
+
+            <div class="card-ratings">
+              <span>
+                <i class="fa-solid fa-star"></i>
+              </span>
+              4.7
+            </div>
+          </div>
+        </div>
+
+        <div class="dest-a fade-in">
+          <img
+            class="dest-img"
+            src="./assets/destination-2.jpg"
+            alt="destination-2"
+          />
+          <div class="card-details">
+            <div>
+              <h4>The City of Lights</h4>
+              <p>Paris, France</p>
+            </div>
+
+            <div class="card-ratings">
+              <span>
+                <i class="fa-solid fa-star"></i>
+              </span>
+              4.5
+            </div>
+          </div>
+        </div>
+
+        <div class="dest-a fade-in">
+          <img
+            class="dest-img"
+            src="./assets/destination-3.jpg"
+            alt="destination-3"
+          />
+          <div class="card-details">
+            <div>
+              <h4>Island of the Gods</h4>
+              <p>Bali, Indonesia</p>
+            </div>
+
+            <div class="card-ratings">
+              <span>
+                <i class="fa-solid fa-star"></i>
+              </span>
+              4.8
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="planning-section">
+      <h2 class="journey">
+        Journey To The Sky Made Simple!
+      </h2>
+
+      <p class="tour">
+        Effortless Planning for Your Next Adventure
+      </p>
+
+      <div class="journey-div">
+        <div class="journey-card">
+          <div class="card-bg">
+            <span>
+              <i class="fa-solid fa-bookmark"></i>
+            </span>
+            <h4>Seamless Booking Process</h4>
+          </div>
+          <div class="card-content">
+            <span>
+              <i class="fa-solid fa-bookmark"></i>
+            </span>
+            <h4>Easy Reservations, One Click Away</h4>
+            <p>From flights and accommodations to activities and transfers, everything you need is available at your fingertips, making travel planning effortless.</p>
+          </div>
+        </div>
+
+
+        <div class="journey-card">
+          <div class="card-bg">
+            <span>
+              <i class="fa-solid fa-mountain"></i>
+            </span>
+            <h4>Tailored Itineraries</h4>
+          </div>
+          <div class="card-content">
+            <span>
+              <i class="fa-solid fa-mountain"></i>
+            </span>
+            <h4>Customized Plans Just for You</h4>
+            <p>Enjoy personalized travel plans designed to match your preferences and interests. Whether you seek adventure or cultural immersion, our tailored itineraries ensure your journey is uniquely yours.</p>
+          </div>
+        </div>
+
+
+        <div class="journey-card">
+          <div class="card-bg">
+            <span>
+              <i class="fas fa-map"></i>
+            </span>
+            <h4>Expert Local Insights</h4>
+          </div>
+          <div class="card-content">
+            <span>
+              <i class="fas fa-map"></i>
+            </span>
+            <h4>Insider Tips and Recommendations</h4>
+            <p>We provide curated recommendations for dining, sightseeing, and hidden gems, so you can experience each destination like a local.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wander-section">
+      <div class="wander-image">
+        <img src="./assets/showcase.jpg" class="fade-in fade-right">
+      </div>
+
+      <div class="wander-content">
+        <h4 class="fade-in">UNLEASH WANDERLUST WITH HIGHTOWERS</h4>
+        <p class="fade-in">Embark on a journey like no other with Skywings, where your travel dreams come to life. 
+          Our mission is to inspire and facilitate your adventures, whether you seek the vibrant energy of bustling cityscapes, 
+          the serene beauty of pristine beaches, or the captivating history of ancient landmarks. 
+          At Skywings, we provide expertly curated destinations and personalized itineraries, 
+          ensuring that every trip is tailored to your unique preferences. Discover hidden gems, immerse yourself in diverse cultures, 
+          and create unforgettable memories that will last a lifetime.
+        </p>
+        <p class="fade-in">
+          With Skywings as your ultimate travel companion, exploring the wonders of the world has never been easier. 
+          Our insider tips and local insights give you the tools to navigate new places with confidence and excitement. 
+          From the moment you start planning to the day you return home, we are dedicated to making your travel experience seamless and enriching.
+        </p>
+        <div class="wander-btn fade-in">
+           <button class="wander-book">Book A Trip Now
+            <span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+           </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section">
+      <div class="stats-card fade-in">
+        <h4>10+</h4>
+        <p>Years Experience</p>
+      </div>
+
+      <div class="stats-card fade-in">
+        <h4>12K</h4>
+        <p>Happy Clients</p>
+      </div>
+
+      <div class="stats-card fade-in">
+        <h4>4.8</h4>
+        <p>Overall Ratings</p>
+      </div>
+    </section>
+
+    <section class="world-section">
+      <h2>Discover The World From Above</h2>
+      <p>Experience Breathtaking Views and Unique Perspectives</p>
+
+      <div class="world-grid">
+        <div class="world-cards fade-in">
+          <span>
+            <i class="fa-solid fa-camera"></i>
+          </span>
+          <h4>Aerial Cityscapes</h4>
+          <p>Witness the architectural marvels and bustling streets from bird's-eye view, offering a unique perspective.</p>
+        </div>
+
+        <div class="world-cards fade-in">
+          <span>
+            <i class="fa-solid fa-ship"></i>
+          </span>
+          <h4>Coastal Wonders</h4>
+          <p>Fly over pristine coastlines and turquoise waters, revealing hidden coves and vibrant coral reefs.</p>
+        </div>
+
+        <div class="world-cards fade-in">
+          <span>
+            <i class="fa-solid fa-mountain"></i>
+          </span>
+          <h4>Historic Landmarks</h4>
+          <p>Observe the grandeur of ancient castles and other significant sites in a way that ground tours can't offer.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section">
+      <h2>Loved By Over Thousand Travelers</h2>
+      <p>Discover the stories of wanderlust and cherished memories through the eyes of our valued clients.</p>
+
+      <div class="slider-container">
+        <div class="slider-card">
+          <div class="client-content">
+            <div class="slider-ratings">
+              <span>
+                <i class="fa-solid fa-star"></i>
+              </span>
+               <span>
+                <i class="fa-solid fa-star"></i>
+              </span>
+               <span>
+                <i class="fa-solid fa-star"></i>
+              </span>
+               <span>
+                <i class="fa-solid fa-star"></i>
+              </span>
+               <span>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+              <p>
+                Skywings has completely transformed my<br> travel experience. From
+                finding hidden gems<br> in bustling cities to discovering serene<br>
+                retreats off the beaten path, every detail was<br> thoughtfully
+                arranged. I can't recommend<br> Skywings enough for anyone looking
+                to<br> elevate their travel experience! 
+            </p>
+          </div>
+
+          
+          <div class="client-details">
+            <img src="./assets/client-1.jpg">
+            <div>
+               <h4>John Adams</h4>
+              <h5>Travel Blogger</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-card">
+          <div class="client-content">
+            <div class="slider-ratings">
+              <span>
+                <i class="fa-solid fa-star"></i>
+              </span>
+               <span>
+                <i class="fa-solid fa-star"></i>
+              </span>
+               <span>
+                <i class="fa-solid fa-star"></i>
+              </span>
+               <span>
+                <i class="fa-solid fa-star"></i>
+              </span>
+               <span>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+            <p>
+              My recent adventure with Skywings was<br> nothing short of
+              spectacular. The<br> personalized itineraries and<br> recommendations
+              they provided led me to<br> extraordinary locations that I would
+              never<br> have found on my own. I'm already planning<br> my next
+              adventure with them!
+            </p>
+          </div>
+
+          
+          <div class="client-details">
+            <img src="./assets/client-2.jpg">
+            <div>
+              <h4>Emily Thompson</h4>
+            <h5>Adeventure Enthusiast</h5>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="slider-card">
+          <div class="client-content">
+            <div class="slider-ratings">
+              <span>
+                <i class="fa-solid fa-star"></i>
+              </span>
+               <span>
+                <i class="fa-solid fa-star"></i>
+              </span>
+               <span>
+                <i class="fa-solid fa-star"></i>
+              </span>
+               <span>
+                <i class="fa-solid fa-star"></i>
+              </span>
+               <span>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+            <p>
+              Skywings offered a transformative<br> experience for my research
+              into historical<br> landmarks. The unique aerial perspectives<br> and
+              provided a new level of appreciation and<br> insight into the
+              sites I studied. I highly<br> recommend their services to fellow<br> 
+              historians and cultural enthusiasts.     
+            </p>
+          </div>
+
+          
+          <div class="client-details">
+            <img src="./assets/client-3.jpg">
+            <div>
+              <h4>Sarah Lee</h4>
+            <h5>Cultural Historian</h5>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="slider-card">
+          <div class="client-content">
+            <div class="slider-ratings">
+              <span>
+                <i class="fa-solid fa-star"></i>
+              </span>
+               <span>
+                <i class="fa-solid fa-star"></i>
+              </span>
+               <span>
+                <i class="fa-solid fa-star"></i>
+              </span>
+               <span>
+                <i class="fa-solid fa-star"></i>
+              </span>
+               <span>
+                <i class="fa-solid fa-star"></i>
+              </span>
+            </div>
+            <p>
+              Finding a balance between work and travel<br> can be challenging,
+              but Skywings made it<br> effortless. Their efficient planning and<br>
+              excellent recommendations helped me<br> maximize my downtime and
+              enjoy every<br> moment of my trip. I look forward to working<br> with
+              them again on future travels.   
+            </p>
+          </div>
+
+          
+          <div class="client-details">
+            <img src="./assets/client-4.jpg">
+            <div>
+              <h4>David Patel</h4>
+            <h5>Business Executive</h5>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="foot-section">
+      <div class="foot-container">
+        <div class="foot-column">
+        <div class="footer-logo">
+          <a href="#" class="f-logo">HighTowers</a>
+        </div>
+
+        <p>
+          Explore the world with ease and excitement through our comprehensive travel platform. 
+          Your journey begins here, where seamless planning meets unforgettable experiences.
+        </p>
+
+        <ul class="socials">
+
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="foot-column">
+        <h4>Quick Links</h4>
+        <ul class="quick-links">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Flights</a>
+          </li>
+          <li>
+            <a href="#">Hotels</a>
+          </li>
+          <li>
+            <a href="#">Cruise</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="foot-column">
+        <h4>Contact Us</h4>
+        <ul class="quick-links">
+          <li>
+            <a href="#">
+              <span>
+                <i class="fa-solid fa-phone"></i>
+              </span>
+               +91 9876543210
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <span>
+                <i class="ri-record-mail-line"></i>
+              </span>
+               info@highTowers
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <span>
+                <i class="fa-solid fa-location-dot"></i>
+              </span>
+               Lagos, Nigeria
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="foot-column">
+        <h4>Subscribe</h4>
+        <form class="subscribe-form">
+          <input type="email" placeholder="Enter your email" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      </div>
+      
+
+      <div class="footer-bar">
+        Copyright © 2024 Emmanuel Nmaju. All rights reserved.
+      </div>
+    </footer>
+    <script src="./main.js"
+            src="https://kit.fontawesome.com/373093f9ba.js" crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
