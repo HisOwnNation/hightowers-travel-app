@@ -37,7 +37,9 @@ ul {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
+
 
 .menu-lists a {
   text-decoration: none;
@@ -263,6 +265,13 @@ header::before {
   text-align: left;
   visibility: visible;
   opacity: 1;
+}
+
+@media (width < 540px) {
+  .hero-content h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
 }
 
 .span-1 {
@@ -656,6 +665,7 @@ img {
   overflow-x: auto;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
 }
 
 .slider-container::-webkit-scrollbar {
